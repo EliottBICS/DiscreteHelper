@@ -32,7 +32,7 @@ class _BicsCardState extends State<BicsCard> {
       backgroundColor: Colors.lightBlueAccent[100],
       appBar: AppBar(
         title: Text(
-            'Student Profile'
+            'Student Profil'
         ) ,
         centerTitle: true,
         backgroundColor: Colors.cyan[700],
