@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:student_profile/testXML.dart';
 import 'question.dart';
 import 'package:xml/xml.dart';
 import 'dart:io';
@@ -23,8 +22,8 @@ class _QuestionListState extends State<QuoteList> {
 
 
   List<Question> questions = [
-    // Question("In \"Discrete Mathematics\", what does the \"Discrete\" stand for?", "Opposite of continuous"),
-    Question(document.getElement('question').toString(), "Opposite of continuous"),
+    Question("In \"Discrete Mathematics\", what does the \"Discrete\" stand for?", "Opposite of continuous"),
+    // Question(document.getElement('question').toString(), "Opposite of continuous"),
     Question("In a coin toss, using a fair coin, what is the probability that the coin lands on its head side?", "1/2 or 50%"),
     Question("What is the negation of the bits 010110", "101001")
   ];
@@ -70,11 +69,11 @@ class _QuestionListState extends State<QuoteList> {
         crossAxisAlignment: CrossAxisAlignment.start ,
         children: questions.map((question) => questionTemplate(question)).toList(),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          test();
-        },
-      ),
-    );
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: (){
+      //     test();
+      //   },
+      );
+    // );
   }
 }
